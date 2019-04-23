@@ -1,0 +1,43 @@
+<!DOCTYPE html> 
+<html> 
+    <head>  
+        <title> Sueldos </title>
+    </head>
+    <body> 
+        <script>
+        let sueldo = 360; 
+        let categoria1 = 0.15;
+        let categoria2 = 0.10;
+        let categoria3 = 0.08;
+        let categoria4 = 0.07;
+        let sueldoFinal=0; 
+        let opcion = 0;
+        let categorias=0; 
+
+        opcion = prompt ("Ingrese el numero de la categoria que desea de 1 a 4: ") 
+                     
+        if (opcion == 1) { 
+            alert ( `Categoria 1 `);
+           categorias=categoria1 * sueldo;
+           sueldoFinal = sueldo + categorias;
+           alert ( `Sueldo anterior: ${sueldo} , Sueldo Final: ${sueldoFinal}`);
+
+         }if (opcion == 2) {
+           alert ( `Categoria 2 `);
+           categorias=categoria2 * sueldo;
+           sueldoFinal = sueldo + categorias;
+           alert ( `Sueldo anterior: ${sueldo} , Sueldo Final: ${sueldoFinal}`);
+         } if (opcion ==3) {
+           alert ( `Categoria 3 `);
+           categorias=categoria3 * sueldo;
+           sueldoFinal = sueldo + categorias;
+           alert ( `Sueldo anterior: ${sueldo} , Sueldo Final: ${sueldoFinal}`);
+         }if (opcion ==4){
+            alert ( `Categoria 4 `);
+           categorias=categoria4 * sueldo;
+           sueldoFinal = sueldo + categorias; 
+           alert ( `Sueldo anterior: ${sueldo} , Sueldo Final: ${sueldoFinal}`);
+         }
+        </script>
+    </body>
+</html>
